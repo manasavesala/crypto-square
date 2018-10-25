@@ -11,12 +11,16 @@ function crypto(inputText){
   var num = Math.sqrt(lengthOf);
   var finalSentence = array.join("");
   // var mappedSentence = array.map(function(char) {
-  for(var i=1; i < = num ; i ++){
+  for(var i=1; i <num+1 ; i ++){
     this["finalSentence"+i] = finalSentence.slice(0,num);
+    finalSentence = finalSentence.slice(num);
   }
-  // });
-  // var input =[];
-  return finalSentence1;
+  for(var i=1; i<num ; i++){
+    this["finalArray"+i] = finalSentence1[i]+finalSentence2[i]+finalSentence3[i];
+  }
+  finalArray = finalArray1+finalArray2;
+
+  return finalArray;
   }
 
 
