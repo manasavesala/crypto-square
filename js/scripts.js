@@ -1,22 +1,24 @@
-function crypto(sentence){
+function crypto(inputText){
   var letter = /^[a-zA-Z]+$/;
-  sentence = sentence.toLowerCase();
-  sentence = sentence.split("");
+  let sentenceOne = inputText.toLowerCase().split("");
   var array=[];
-
-  for(var i = 0 ; i <sentence.length ;i ++){
-    if(sentence[i].match(letter)){
-      array.push(sentence[i]);
+  for(var i = 0 ; i <sentenceOne.length ;i ++){
+    if(sentenceOne[i].match(letter)){
+      array.push(sentenceOne[i]);
     }
   }
-  alert(array);
-
-  var mappedSentence = array.map(function(char) {
-
-
-  });
+  var lengthOf = array.length;
+  var num = Math.sqrt(lengthOf);
+  var finalSentence = array.join("");
+  // var mappedSentence = array.map(function(char) {
+  for(var i=1; i < = num ; i ++){
+    this["finalSentence"+i] = finalSentence.slice(0,num);
+  }
+  // });
   // var input =[];
-  };
+  return finalSentence1;
+  }
+
 
 
   $(document).ready(function(){
